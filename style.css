@@ -1,37 +1,42 @@
 * {
 	box-sizing: border-box;
+	font-family: Arial;
 }
 
 body {
 	background-color: #ccc;
 }
-
-.board {
-	border: 3px solid red;
+h1, h2, h3 {
+	text-align: center
 }
-
-div {
+div.tweet{
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 button {
+	margin: 10px;
 	border: 0;
-	padding: 25px;
-	border-radius: 5px;
-	color: #ffff00;
-	background-color: #888;
-	margin: 5px;
+	text-transform: uppercase;
+	padding: 15px;
+	box-shadow: 5px 5px #aaa;
 	cursor: pointer;
-	font-size: 2rem;
-	text-transform: uppercase;
+	background-color: #ccc;
+	font-size: 1rem;
 }
-button:hover {
-	color: #fff;
-}
-
-p {
-	max-width: 50%;
-	font-size: 1.5rem;
+a {
+	text-decoration: none;
+	margin: 10px;
+	color: #000;
 	text-transform: uppercase;
+	padding: 15px;
+	box-shadow: 5px 5px #aaa;
+	cursor: pointer;
+	background-color: #ccc;
+	font-size: 1rem;
+}
+button:hover, a:hover {
+	background-color: #aaa;
+	color: #ccc;
 }
